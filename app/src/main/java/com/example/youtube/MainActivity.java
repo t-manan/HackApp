@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private RetrofitInterface retrofitInterface;
 //    private String BASE_URL = "http://10.0.2.2:3000";
 
-    private String BASE_URL = "https://backendqrcode.herokuapp.com";
+    private String BASE_URL = "https://qrcodess.herokuapp.com";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                handleLoginDialog();
-//                checkConnection();
+                checkConnection();
                 Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }

@@ -17,7 +17,10 @@ public interface RetrofitInterface {
     @POST("/signup")
     Call<Void> executeSignup (@Body HashMap<String, String> map);
 
-    @GET("/checkconnection")
+    @GET("/")
     Call<LoginResult> checkConnection();
+
+    @POST("/patient/qrcode")
+    Call<QrResponse> generateQr(@Body HashMap<String, String> map);
 
 }
