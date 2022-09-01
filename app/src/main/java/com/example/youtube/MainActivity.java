@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                handleLoginDialog();
-                checkConnection();
-//                Intent intent = new Intent(MainActivity.this, ScannerActivity.class);
-//                startActivity(intent);
+//                checkConnection();
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
             }
         });
 
