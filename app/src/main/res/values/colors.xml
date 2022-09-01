@@ -16,5 +16,11 @@
     <color name="grey">#E5E5E5</color>
 
     <color name="white">#FFFFFF</color>
+    <color name="hhcplus_background">#00B981</color>
+    <color name="hhcplus_text">#FFFFFF</color>
+    <color name="hhcplush_heading_background">#F9FCFD</color>
+    <color name="hhcplush_heading_text">#004061</color>
+    <color name="hhcplush_green">#00B981</color>
+    <color name="loading_background">@android:color/transparent</color>
 
 </resources>

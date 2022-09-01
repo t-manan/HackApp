@@ -1,6 +1,8 @@
 package com.example.youtube;
 
-import android.util.Log;
+import com.example.youtube.models.LoginRequest;
+import com.example.youtube.models.LoginResponse;
+import com.example.youtube.models.LoginResult;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -24,6 +26,9 @@ public interface RetrofitInterface {
 
     @GET("/")
     Call<LoginResult> checkConnection();
+
+    @POST("/login")
+    Call<LoginResponse> login(@Body LoginRequest loginRequest);
 
     @POST("/patient/qrcode")
     Call<QrResponse> generateQr(@Body HashMap<String, String> map);
