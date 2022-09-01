@@ -1,6 +1,8 @@
 package com.example.youtube;
 
-import android.util.Log;
+import com.example.youtube.models.LoginRequest;
+import com.example.youtube.models.LoginResponse;
+import com.example.youtube.models.LoginResult;
 
 import java.util.HashMap;
 
@@ -19,5 +21,8 @@ public interface RetrofitInterface {
 
     @GET("/checkconnection")
     Call<LoginResult> checkConnection();
+
+    @POST("/login")
+    Call<LoginResponse> login(@Body LoginRequest loginRequest);
 
 }

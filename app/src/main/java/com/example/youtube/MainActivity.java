@@ -8,14 +8,14 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.io.InputStream;
+import com.example.youtube.models.LoginResult;
+
 import java.util.HashMap;
 
 import retrofit2.Call;

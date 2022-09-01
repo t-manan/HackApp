@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Youtube</string>
+    <string name="welcome_to_meditick">Welcome to MediTick!</string>
+    <string name="provide_phone_number">Please provide your phone number to get started</string>
+    <string name="enter_phone_number">Please enter your phone number</string>
+    <string name="continue_text">Continue</string>
+    <string name="drawer_change_language">Change Language</string>
+    <string name="sms_heading"><b>Please enter your PIN to verify your account</b></string>
+    <string name="btn_label_pin_validate">Verify</string>
+
 </resources>
