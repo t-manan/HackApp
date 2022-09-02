@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -21,9 +22,12 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 EditText phoneNumber = (EditText)findViewById(R.id.et_phone_number);
                 String phoneNumberString = phoneNumber.getText().toString();
-                startPinActivity(phoneNumberString);
-//                Intent i = new Intent(LoginActivity.this, AddPrescriptionActivity.class);
-//                startActivity(i);
+                if(phoneNumberString.length() == 10) {
+                    startPinActivity(phoneNumberString);
+                }
+                else {
+                    Toast.makeText(LoginActivity.this, "Please enter phone Number of 10 digits", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }

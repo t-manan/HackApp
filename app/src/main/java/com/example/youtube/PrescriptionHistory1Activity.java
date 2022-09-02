@@ -2,9 +2,14 @@ package com.example.youtube;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.view.View;
@@ -108,14 +113,16 @@ public class PrescriptionHistory1Activity extends AppCompatActivity {
             }
         });
 
+        if(ContextCompat.checkSelfPermission(PrescriptionHistory1Activity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(PrescriptionHistory1Activity.this, new String[]{Manifest.permission.CAMERA}, 101);
+        }
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(id != null)
-                {
+                {   Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivityForResult(intent, 101);
                     findViewById(R.id.fixed_layout2).setVisibility(View.GONE);
-                    Intent camera = new Intent(PrescriptionHistory1Activity.this, CameraActivity.class);
-                    startActivity(camera);
                 }
                 else
                 {
