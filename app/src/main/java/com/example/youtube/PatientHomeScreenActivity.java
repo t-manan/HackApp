@@ -23,7 +23,7 @@ public class PatientHomeScreenActivity extends AppCompatActivity {
         findViewById(R.id.prescription).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent profileActivity = new Intent(PatientHomeScreenActivity.this, PrescriptionHistoryActivity.class);
+                Intent profileActivity = new Intent(PatientHomeScreenActivity.this, PrescriptionHistory1Activity.class);
                 startActivity(profileActivity);
             }
         });
