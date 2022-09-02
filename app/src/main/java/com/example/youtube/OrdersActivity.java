@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -47,7 +48,6 @@ public class OrdersActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         getOrders();
-
     }
 
     private void getOrders() {
