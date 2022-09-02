@@ -14,6 +14,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AddPrescriptionActivity"
+            android:exported="false" />
+        <activity
             android:name=".PrescriptionHistoryActivity"
             android:exported="false" />
         <activity
