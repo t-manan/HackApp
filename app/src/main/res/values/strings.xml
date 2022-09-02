@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Youtube</string>
-    <string name="welcome_to_meditick">Welcome to MediTick!</string>
+    <string name="welcome_to_meditick">Welcome to HealthX!</string>
     <string name="provide_phone_number">Please provide your phone number to get started</string>
     <string name="enter_phone_number">Please enter your phone number</string>
     <string name="continue_text">Continue</string>

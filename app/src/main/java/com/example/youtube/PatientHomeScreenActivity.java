@@ -12,7 +12,8 @@ public class PatientHomeScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_home_screen);
-
+        Bundle extras = getIntent().getExtras();
+        String id = extras.getString("id");
         findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,6 +25,7 @@ public class PatientHomeScreenActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent profileActivity = new Intent(PatientHomeScreenActivity.this, PrescriptionHistory1Activity.class);
+                profileActivity.putExtra("id", id);
                 startActivity(profileActivity);
             }
         });

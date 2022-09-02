@@ -18,6 +18,8 @@ public class DoctorHomeScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_home_screen);
+        Bundle extras = getIntent().getExtras();
+        String id = extras.getString("id");
         findViewById(R.id.prescription).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +49,7 @@ public class DoctorHomeScreenActivity extends AppCompatActivity {
             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
                     // Continue with delete operation
-                    Intent intent =new Intent(DoctorHomeScreenActivity.this, PrescriptionHistoryActivity.class);
+                    Intent intent =new Intent(DoctorHomeScreenActivity.this, PrescriptionHistory1Activity.class);
                     intent.putExtra(SearchManager.QUERY,result.getContents());
                     startActivity(intent);
                 }

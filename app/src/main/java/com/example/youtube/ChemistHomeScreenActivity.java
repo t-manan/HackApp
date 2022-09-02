@@ -35,6 +35,8 @@ public class ChemistHomeScreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Bundle extras = getIntent().getExtras();
+        String id = extras.getString("id");
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
