@@ -4,7 +4,12 @@ import com.example.youtube.models.LoginRequest;
 import com.example.youtube.models.LoginResponse;
 import com.example.youtube.models.LoginResult;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -28,4 +33,6 @@ public interface RetrofitInterface {
     @POST("/patient/qrcode")
     Call<QrResponse> generateQr(@Body HashMap<String, String> map);
 
+    @GET("/orders")
+    Call<Map<String, Object>> getOrders();
 }
