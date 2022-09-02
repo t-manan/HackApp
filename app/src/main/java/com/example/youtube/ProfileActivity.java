@@ -53,6 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
                 generateQr(map);
             }
         });
+        findViewById(R.id.qrscanner).setVisibility(View.GONE);
     }
 
     private void generateQr(HashMap<String,String> map) {
