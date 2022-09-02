@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
                 EditText phoneNumber = (EditText)findViewById(R.id.et_phone_number);
                 String phoneNumberString = phoneNumber.getText().toString();
                 startPinActivity(phoneNumberString);
-//                Intent i = new Intent(LoginActivity.this, AddPrescriptionActivity.class);
+//                Intent i = new Intent(LoginActivity.this, PrescriptionHistoryActivity.class);
 //                startActivity(i);
             }
         });
