@@ -18,6 +18,9 @@ public class DoctorHomeScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_home_screen);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         Bundle extras = getIntent().getExtras();
         String id = extras.getString("id");
         findViewById(R.id.prescription).setOnClickListener(new View.OnClickListener() {
@@ -41,6 +44,7 @@ public class DoctorHomeScreenActivity extends AppCompatActivity {
     {
         super.onActivityResult(requestCode, resultCode, data);
         // check if the request code is same as what is passed  here it is 2
+
         IntentResult result = IntentIntegrator.parseActivityResult(resultCode, data);
 //        String contents = result.getContents();
         if (result != null) {
