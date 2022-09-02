@@ -7,5 +7,6 @@
     <string name="drawer_change_language">Change Language</string>
     <string name="sms_heading"><b>Please enter your PIN to verify your account</b></string>
     <string name="btn_label_pin_validate">Verify</string>
+    <string name="keep_up_label">Keep up! You have earned</string>
 
 </resources>

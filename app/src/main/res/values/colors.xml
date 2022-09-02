@@ -22,5 +22,6 @@
     <color name="hhcplush_heading_text">#004061</color>
     <color name="hhcplush_green">#00B981</color>
     <color name="loading_background">@android:color/transparent</color>
+    <color name="adherence_card_stroke_color">#CCCCCC</color>
 
 </resources>
