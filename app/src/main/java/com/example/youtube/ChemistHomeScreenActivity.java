@@ -48,7 +48,7 @@ public class ChemistHomeScreenActivity extends AppCompatActivity {
             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
                     // Continue with delete operation
-                    Intent intent =new Intent(ChemistHomeScreenActivity.this, MainActivity.class);
+                    Intent intent =new Intent(ChemistHomeScreenActivity.this, PrescriptionHistoryActivity.class);
                     intent.putExtra(SearchManager.QUERY,result.getContents());
                     startActivity(intent);
                 }
