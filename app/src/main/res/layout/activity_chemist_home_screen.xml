@@ -43,7 +43,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="200dp"
-            android:text="Orders"
+            android:text=""
             android:textSize="16sp"
             android:layout_marginStart="0dp"
             android:orientation="horizontal"
@@ -51,7 +51,7 @@
             app:flow_horizontalBias="0.5"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/profile"
-            android:background="@drawable/medicines"
+            android:background="@drawable/chemist_order"
             app:layout_constraintEnd_toStartOf="@+id/prescription"
             >
         </Button>
@@ -59,12 +59,12 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="200dp"
-            android:text="QR Scanner"
+            android:text=""
             android:textSize="16sp"
             android:layout_marginEnd="0dp"
             android:orientation="horizontal"
             app:flow_horizontalBias="0.5"
-            android:background="@drawable/qr_scanner"
+            android:background="@drawable/qr_code1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/profile"
             app:layout_constraintTop_toTopOf="parent"
