@@ -8,5 +8,21 @@
     <string name="sms_heading"><b>Please enter your PIN to verify your account</b></string>
     <string name="btn_label_pin_validate">Verify</string>
     <string name="keep_up_label">Keep up! You have earned</string>
+    <string name="mr_ram_pras"><b>Mr Ram Prasad</b></string>
+    <string name="male_37_yrs">Male | 37 Yrs</string>
+    <string name="consulting_"><b>Consulting For</b></string>
+    <string name="text">Migrane</string>
+    <string name="started_tim"><b>Started Time</b></string>
+    <string name="medical_con"><b>Medical Conditions</b></string>
+    <string name="has_been_di"><b>Has been diagonsed with High Headache</b></string>
+    <string name="has_reporte"><b>Has reported headache with swelling</b></string>
+    <string name="prescribed_"><b>Prescribed Tests</b></string>
+    <string name="label">MRI</string>
+    <string name="blood">Blood Test</string>
+    <string name="medication"><b>Medication</b></string>
+    <string name="paracetamol"><b>Paracetamol 100mg</b></string>
+    <string name="once_8_30_a">Once | 8:30 AM</string>
+    <string name="paracetamol5"><b>Paracetamol 500mg</b></string>
+
 
 </resources>
