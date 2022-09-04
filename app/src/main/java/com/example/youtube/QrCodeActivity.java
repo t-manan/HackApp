@@ -37,14 +37,14 @@ public class QrCodeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
-                whatsappIntent.setType("text/plain");
-                whatsappIntent.setPackage("com.whatsapp");
+//                whatsappIntent.setType("text/plain");
+//                whatsappIntent.setPackage("com.whatsapp");
 //                whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Hello World");
                 whatsappIntent.putExtra(Intent.EXTRA_STREAM, getImageUri(QrCodeActivity.this,bitmap1));
                 whatsappIntent.setType("image/*");
                 whatsappIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 try {
-                    startActivity(whatsappIntent);
+                    startActivity(Intent.createChooser(whatsappIntent,"Share QR"));
                 } catch (android.content.ActivityNotFoundException ex) {
                 }
             }
