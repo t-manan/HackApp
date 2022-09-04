@@ -10,12 +10,16 @@
     android:background="@color/followers"
     >
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="HealthX"
+        android:textStyle="bold"
+        android:textFontWeight="800"
+        android:textSize="30dp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/icon_meditick_white"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/iv_meditick"
